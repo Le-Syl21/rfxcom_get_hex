@@ -143,7 +143,7 @@ args = parser.parse_args()
 
 #HEX
 if args.source:
-    packet=bytes.fromhex(args.source.replace(",", "").replace("0x", "").replace(" ", "").strip())
+    packet=bytes.fromhex(args.source.replace(".", "").replace(",", "").replace("0\\", "").replace("0x", "").replace(" ", "").strip())
     sync, data = packet_decode(packet)
     output_ba = packet_encode(sync, args.repeat, data)
     if not args.nofiles:
