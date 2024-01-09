@@ -8,7 +8,7 @@ Linux:
 git clone "https://github.com/Le-Syl21/rfxcom_get_hex.git"
 python3 -m venv "rfxcom_get_hex"
 cd "rfxcom_get_hex"
-source .bin/activate
+source bin/activate
 pip3 install -r requirements.txt
 ```
 
@@ -16,7 +16,7 @@ pip3 install -r requirements.txt
 
 ```bash
 # IN rfxcom_get_hex DIR
-source .bin/activate
+source bin/activate
 ./rfxcom_get_hex.py -h
 usage: rfxcom_get_hex.py [-h] [-p PORT] [-r REPEAT] [-s SOURCE]
 
