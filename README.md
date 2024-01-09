@@ -3,9 +3,6 @@
 A python script to convert RFXCom Raw/Hex input in output RFXCom Raw/Hex command for non rotating rf433 signals
 
 ## Installation
-
-Install rfxcom_get_hex
-
 Linux:
 ```bash
 rfxcomdir="$PWD/rfxcom_get_hex"
@@ -21,6 +18,7 @@ pip install -r requirements.txt
 ```bash
 cd $rfxcomdir
 source .bin/activate
+./rfxcom_get_hex.py -h
 usage: rfxcom_get_hex.py [-h] [-p PORT] [-r REPEAT] [-s SOURCE]
 
 options:
