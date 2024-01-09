@@ -32,11 +32,11 @@ options:
 
 RFXCOM receiver but can also work with just an undec raw hex output with option --source
 
-![alt text](http://www.rfxcom.com/epages/78165469.sf/nl_NL/?ObjectPath=/Shops/78165469/Products/23104)
+![Receiver](https://shop.strato.com/WebRoot/StoreNL2/Shops/78165469/6479/B429/0818/BFF6/B981/0A0C/6D0C/4A09/RFXtrx433E.jpg)
 
 ## Related
 
-You can buy RF module at: [RFXCOM](http://www.rfxcom.com)
+You can buy RF module at: [RFXCom Shop](http://www.rfxcom.com)
 
 You can use the output to create Home Assistant Button CARD to use service rfxtrx.send to pilot RF devices
 
