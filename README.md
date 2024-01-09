@@ -28,7 +28,15 @@ options:
   -n, --nofiles			Don't create output files
 ```
 
+## Work with
+
+RFXCOM receiver but can also work with just an undec raw hex output with option --source
+
+![alt text](http://www.rfxcom.com/epages/78165469.sf/nl_NL/?ObjectPath=/Shops/78165469/Products/23104)
+
 ## Related
+
+You can buy RF module at: [RFXCOM](http://www.rfxcom.com)
 
 You can use the output to create Home Assistant Button CARD to use service rfxtrx.send to pilot RF devices
 
