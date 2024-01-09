@@ -1,6 +1,6 @@
 # rfxcom_get_hex
 
-A python script to convert RFXCom Raw/Hex input in output RFXCom Raw/Hex command for non rotating rf433 signals
+A python script to convert RFXCom Raw/Hex input in output RFXCom Raw/Hex command for non rotating RF signals
 
 ## Installation
 Linux:
@@ -27,3 +27,13 @@ options:
   -s SOURCE, --source SOURCE	Your own hex source string like '0x78 0x7f 0x00 0x00 0x01' or '0x78 0x7f 0x00 0x00 0x01' or '78 7f 00 00 01' or '787f000001'
   -n, --nofiles			Don't create output files
 ```
+
+## Related
+
+You can use the output to create Home Assistant Button CARD to use service rfxtrx.send to pilot RF devices
+
+[Home Assistant rfxtrx](https://www.home-assistant.io/integrations/rfxtrx/#services)
+
+## License
+
+[GPL3](https://www.gnu.org/licenses/gpl-3.0.html)
