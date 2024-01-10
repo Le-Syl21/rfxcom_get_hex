@@ -2,12 +2,14 @@
 
 A python script to convert RFXCom Raw/Hex input in output RFXCom Raw/Hex command for non rotating RF signals
 ## Install/Use Tutorial
-[FR Video](https://youtu.be/KfnNkKNU3dY)
-[EN Video](https://youtu.be/y254gbGOxcg)
+[EN Video](https://youtu.be/KfnNkKNU3dY)
+[FR Video](https://youtu.be/y254gbGOxcg)
 
 ## Installation
 Linux:
+
 Requirements: Python3, GIT
+
 ```bash
 git clone "https://github.com/Le-Syl21/rfxcom_get_hex.git"
 python3 -m venv "rfxcom_get_hex"
