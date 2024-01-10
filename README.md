@@ -1,12 +1,13 @@
 # rfxcom_get_hex
 
 A python script to convert RFXCom Raw/Hex input in output RFXCom Raw/Hex command for non rotating RF signals
-## Install/Use Tutorial
+## Install / Use Tutorial
+Linux:
 [EN Video](https://youtu.be/KfnNkKNU3dY)
 [FR Video](https://youtu.be/y254gbGOxcg)
 
 ## Installation
-Linux:
+Linux / Mac:
 
 Requirements: Python3, GIT
 
@@ -18,12 +19,42 @@ source bin/activate
 pip3 install -r requirements.txt
 ```
 
+Windows:
+
+Requirements: Python3, GIT (On PATH)
+
+```bash
+#IN A CMD
+git clone "https://github.com/Le-Syl21/rfxcom_get_hex.git"
+python -m venv "rfxcom_get_hex"
+cd "rfxcom_get_hex"
+.\Scripts\activate.bat
+pip3 install -r requirements.txt
+```
+
 ## Usage/Examples
+Linux / Mac:
 
 ```bash
 # IN rfxcom_get_hex DIR
 source bin/activate
 ./rfxcom_get_hex.py -h
+usage: rfxcom_get_hex.py [-h] [-p PORT] [-r REPEAT] [-s SOURCE]
+
+options:
+  -h, --help            	show this help message and exit
+  -p PORT, --port PORT 		RFXtrx port like '/dev/ttyUSB0'
+  -r REPEAT, --repeat REPEAT	Repeat number (default=8) but if doesn't work you can try to grow up to 16, 32, 64, max 255 but no sens
+  -s SOURCE, --source SOURCE	Your own hex source string like '0x78 0x7f 0x00 0x00 0x01' or '0x78 0x7f 0x00 0x00 0x01' or '78 7f 00 00 01' or '787f000001'
+  -n, --nofiles			Don't create output files
+```
+
+Windows:
+
+```bash
+# IN a CMD IN rfxcom_get_hex DIR
+.\Scripts\activate.bat
+python .\rfxcom_get_hex.py -h
 usage: rfxcom_get_hex.py [-h] [-p PORT] [-r REPEAT] [-s SOURCE]
 
 options:
