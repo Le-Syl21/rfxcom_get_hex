@@ -1,9 +1,9 @@
 #!/bin/env python3
 from serial import Serial
 from serial.tools import list_ports
-from pick import pick
 from time import sleep
 import argparse
+import inquirer
 
 #RFCOM CONST + CMD
 baudrate = 38400 #RFXCom factory speed
@@ -15,18 +15,14 @@ undec='0d 00 00 03 03 53 00 80 00 00 00 00 00 00'
 
 def get_device():
     print("Détecting Devices:")
-    ports=[]
-    descriptions=[]
     menu=[]
     for port in list_ports.comports():
-        ports.append(port.device)
-        descriptions.append(port.description)
-        menu.append(f"{port.device}\t=>\t{port.description}")
-    line , index = pick(menu, "Please choose your RFXCom Device: ")
-    port = ports[index]
-    description = descriptions[index]
-    print(f"{description} -> Selected")
-    return port
+        menu.append({port.device: port.description})
+    questions = [inquirer.List('Port', message="Please choose your RFXCom Device: ", choices=menu)]
+    answers = inquirer.prompt(questions)
+    for device, description in answers.get('Port').items():
+        print(f"{description} -> Selected")
+        return device
 
 def get_conn(port):
     print("Opening port: ", end='')

@@ -1,2 +1,9 @@
-pick==2.2.0
+blessed==1.20.0
+editor==1.6.5
+inquirer==3.2.1
 pyserial==3.5
+readchar==4.0.5
+runs==1.2.0
+six==1.16.0
+wcwidth==0.2.13
+xmod==1.8.1
