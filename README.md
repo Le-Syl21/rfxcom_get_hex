@@ -1,6 +1,13 @@
 # rfxcom_get_hex
 
 A python script to convert RFXCom Raw/Hex input in output RFXCom Raw/Hex command for non rotating RF signals
+
+## Community & support
+
+Questions, bug reports, beta testing, or just want to chat? Join the Discord:
+
+[![Discord](https://img.shields.io/badge/Discord-Le--Syl21%20Tools-5865F2?logo=discord&logoColor=white)](https://discord.gg/T37DYHmt2j)
+
 ## Install / Use Tutorial
 Linux:
 [EN Video](https://youtu.be/KfnNkKNU3dY)

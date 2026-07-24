@@ -130,7 +130,7 @@ def hex_file(name, ba):
 
 # MAIN
 #Get Args
-parser = argparse.ArgumentParser(description='')
+parser = argparse.ArgumentParser(description='', epilog="Community & support: https://discord.gg/T37DYHmt2j")
 parser.add_argument('-p', '--port', type=str, help="RFXtrx port like '/dev/ttyUSB0'")
 parser.add_argument('-r', '--repeat', type=int, default=8, help="Repeat number (default=8) but if doesn't work you can try to grow up to 16, 32, 64, max 255 but no sens")
 parser.add_argument('-s', '--source', type=str, help="Your own hex source string like '0x78 0x7f 0x00 0x00 0x01' or '0x78 0x7f 0x00 0x00 0x01' or '78 7f 00 00 01' or '787f000001'")
