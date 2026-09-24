@@ -1,5 +1,5 @@
 blessed==1.50.0
-editor==1.6.5
+editor==2.0.1
 inquirer==3.4.1
 pyserial==3.5
 readchar==4.2.2
